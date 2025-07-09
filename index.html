@@ -2,11 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Sarthak Thakur | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
 </head>
 <body>
+
   <header>
     <div class="container">
       <div class="logo">Sarthak</div>
@@ -18,24 +20,26 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-      <a href="resume.pdf" class="btn" download>Download Resume</a>
+      <a class="btn resume" href="resume.pdf" download>Download Resume</a>
     </div>
   </header>
 
-  <section class="hero">
+  <section class="hero" id="hero">
     <div class="container hero-content">
-      <div class="hero-text">
+      <div class="hero-text" data-aos="fade-right">
         <h1>Hi, I'm <span>Sarthak Thakur</span></h1>
         <p>Data Analyst & BI Developer passionate about turning data into insights and automation.</p>
-        <a href="mailto:thakursarthak777@gmail.com" class="btn">Hire Me</a>
+        <p><strong>Experience:</strong> 1+ years in dashboard automation, analytics & reporting</p>
+        <p><strong>Skills:</strong> Python, SQL, Power BI, Excel</p>
+        <a href="mailto:tsarthak7723@gmail.com" class="btn">Hire Me</a>
       </div>
-      <div class="hero-img">
-        <img src="profile.jpg" alt="Sarthak Thakur">
+      <div class="hero-img" data-aos="fade-left">
+        <img src="profile.jpg" alt="Sarthak Thakur" />
       </div>
     </div>
   </section>
 
-  <section id="education" class="education">
+  <section id="education" class="section" data-aos="fade-up">
     <div class="container">
       <h2>Education</h2>
       <ul>
@@ -46,37 +50,40 @@
     </div>
   </section>
 
-  <section id="projects" class="projects">
+  <section id="projects" class="section projects" data-aos="fade-up">
     <div class="container">
       <h2>Projects</h2>
       <div class="project-grid">
         <div class="project-card">
-          <img src="project1.png" alt="Excel Sales Dashboard">
+          <img src="project1.png" alt="Excel Dashboard">
           <h3>Excel Sales Dashboard</h3>
-          <p>Interactive Excel dashboard using slicers, pivot charts, and KPIs.</p>
+          <p>Interactive dashboard with slicers, pivot tables, KPIs and monthly tracking.</p>
           <a href="https://github.com/tsarthak777/Excel-Sales-Dashboard" target="_blank">View on GitHub</a>
         </div>
         <div class="project-card">
-          <img src="project2.png" alt="Power BI Projects">
+          <img src="project2.png" alt="Power BI Dashboard">
           <h3>Power BI Projects</h3>
-          <p>Dynamic dashboards analyzing sales & customer data using filters and visuals.</p>
+          <p>Dynamic dashboards built with filters and visuals to track executive and regional performance.</p>
           <a href="https://github.com/tsarthak777/Power-BI-Projects" target="_blank">View on GitHub</a>
         </div>
+      </div>
+      <div class="more-btn">
+        <a href="https://github.com/tsarthak777" target="_blank" class="btn">More Projects</a>
       </div>
     </div>
   </section>
 
-  <section id="about" class="about">
+  <section id="about" class="section" data-aos="fade-up">
     <div class="container">
       <h2>About Me</h2>
-      <p>I’m a data enthusiast skilled in Power BI, Excel, Python, and SQL with a focus on automation and dashboard building. I'm currently pursuing an MBA in Data Science and have experience across web design, analytics, and reporting tools.</p>
+      <p>I’m a data enthusiast skilled in Python, SQL, Power BI and Excel, with a focus on building smart dashboards and automating reports. I love solving business problems with data.</p>
     </div>
   </section>
 
-  <section id="contact" class="contact">
+  <section id="contact" class="section" data-aos="fade-up">
     <div class="container">
       <h2>Contact</h2>
-      <p>Email: <a href="mailto:thakursarthak777@gmail.com">thakursarthak777@gmail.com</a></p>
+      <p>Email: <a href="mailto:tsarthak7723@gmail.com">tsarthak7723@gmail.com</a></p>
       <p>GitHub: <a href="https://github.com/tsarthak777" target="_blank">tsarthak777</a></p>
       <p>LinkedIn: <a href="https://linkedin.com/in/sarthak-thakur-062967200" target="_blank">View Profile</a></p>
     </div>
@@ -88,6 +95,7 @@
     </div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
