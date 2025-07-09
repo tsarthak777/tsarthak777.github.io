@@ -1,6 +1,6 @@
-// Initialize AOS (Animate On Scroll)
+// Initialize AOS scroll animations
 AOS.init({
-  duration: 1000,     // Animation duration in ms
-  once: true,         // Run only once per element
-  easing: 'ease-in-out'
+  duration: 1000,        // animation duration in milliseconds
+  easing: 'ease-in-out', // animation easing style
+  once: true             // whether animation should happen only once
 });
